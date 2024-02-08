@@ -1,11 +1,15 @@
-function countBy(x, n) {
-  const result = [];
-  let increment = 0;
-  for (let i = 0; i < n; i++) {
-    increment += x;
-    result.push(increment);
-  }
-  return result;
-}
+// function countBy(x, n) {
+//   const result = [];
+//   for (let i = 1; i < n + 1; i++) {
+//     result.push(x * i);
+//   }
+//   return result;
+// }
 
-console.log(countBy(1, 10));
+// function countBy(x, n) {
+//   return Array(n).fill().map((el, i) => (i+1)*x)
+// }
+
+const countBy = (x, n) => [...Array(n)].map((el, i) => (i + 1) * x);
+
+console.log(countBy(2, 5));
