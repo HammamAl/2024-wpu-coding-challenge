@@ -2,7 +2,7 @@ function duplicateEncode(word) {
   const arr = word.toLowerCase().split("");
   let result = "";
   for (const i of arr) {
-    if (arr.filter((el) => el === i).length === 1) {
+    if (arr.indexOf(i) === arr.lastIndexOf(i)) {
       result += "(";
     } else {
       result += ")";
@@ -11,4 +11,4 @@ function duplicateEncode(word) {
   return result;
 }
 
-console.log(duplicateEncode("(( @"));
+console.log(duplicateEncode("Success"));
