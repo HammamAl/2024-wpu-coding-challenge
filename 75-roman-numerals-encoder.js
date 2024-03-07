@@ -17,6 +17,8 @@ function solution(number) {
   let result = "";
   for (const key in romanNum) {
     let temp = Math.floor(number / romanNum[key]);
+    console.log(number / romanNum[key]);
+    console.log(temp);
     number -= temp * romanNum[key];
     result += key.repeat(temp);
   }
