@@ -7,8 +7,7 @@ function foldArray(array, runs) {
     }
     array = arr;
   }
-
   return array;
 }
 
-console.log(foldArray([5], 1));
+console.log(foldArray([-9, 9, -8, 8, 66, 23], 1));
